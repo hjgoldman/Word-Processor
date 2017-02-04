@@ -13,9 +13,13 @@
 -(int) getSentenceCount :(NSString*) words {
 
     NSString *inputText = words;
-    NSUInteger sentenceCount = [[inputText componentsSeparatedByString:@"."] count] - 1;
+    NSUInteger sentenceCountWithPeriod = [[inputText componentsSeparatedByString:@"."] count] - 1;
+    NSUInteger sentenceCountWithQuestion = [[inputText componentsSeparatedByString:@"?"] count] -1;
+    NSUInteger sentenceCountWithExclamation = [[inputText componentsSeparatedByString:@"!"] count] -1;
     
-    return (int)sentenceCount;
+    int sentenceCount = (int)sentenceCountWithPeriod + (int)sentenceCountWithQuestion + (int)sentenceCountWithExclamation;
+    
+    return sentenceCount;
     
 };
 
