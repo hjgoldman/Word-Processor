@@ -13,12 +13,10 @@
 
 @interface ViewController : UIViewController
 
-
 @property (nonatomic,weak) IBOutlet UITextView *inputTextField;
 @property (nonatomic,weak) IBOutlet UILabel *sentenceCountLabel;
 @property (nonatomic,weak) IBOutlet UILabel *vowelCountLabel;
 @property (nonatomic,weak) IBOutlet UILabel *characterCountLabel;
-
 
 @end
 

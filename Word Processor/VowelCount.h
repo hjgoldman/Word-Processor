@@ -10,6 +10,6 @@
 
 @interface VowelCount : NSObject
 
--(int) getVowelCount: (NSString*) words;
+-(int) getVowelCount: (NSString*) inputText;
 
 @end

@@ -10,6 +10,6 @@
 
 @interface SentenceCount : NSObject
 
--(int) getSentenceCount :(NSString*) words;
+-(int) getSentenceCount :(NSString*) inputText;
 
 @end

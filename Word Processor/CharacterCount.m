@@ -10,9 +10,8 @@
 
 @implementation CharacterCount
 
--(int) getCharacterCount: (NSString*) words{
+-(int) getCharacterCount: (NSString*) inputText{
     
-    NSString *inputText = words;
     NSUInteger characterCount = [inputText length];
     return (int)characterCount;
     

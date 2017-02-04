@@ -10,6 +10,6 @@
 
 @interface CharacterCount : NSObject
 
--(int) getCharacterCount :(NSString*) words;
+-(int) getCharacterCount :(NSString*) inputText;
 
 @end
