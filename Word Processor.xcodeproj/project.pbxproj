@@ -13,6 +13,9 @@
 		3A823C701E45143000A620BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A823C6E1E45143000A620BA /* Main.storyboard */; };
 		3A823C721E45143000A620BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A823C711E45143000A620BA /* Assets.xcassets */; };
 		3A823C751E45143000A620BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A823C731E45143000A620BA /* LaunchScreen.storyboard */; };
+		3A823C7F1E46664500A620BA /* SentenceCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A823C7E1E46664500A620BA /* SentenceCount.m */; };
+		3A823C821E46665A00A620BA /* CharacterCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A823C811E46665A00A620BA /* CharacterCount.m */; };
+		3A823C851E46667200A620BA /* VowelCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A823C841E46667200A620BA /* VowelCount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		3A823C711E45143000A620BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A823C741E45143000A620BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A823C761E45143000A620BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A823C7D1E46664500A620BA /* SentenceCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentenceCount.h; sourceTree = "<group>"; };
+		3A823C7E1E46664500A620BA /* SentenceCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SentenceCount.m; sourceTree = "<group>"; };
+		3A823C801E46665A00A620BA /* CharacterCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCount.h; sourceTree = "<group>"; };
+		3A823C811E46665A00A620BA /* CharacterCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterCount.m; sourceTree = "<group>"; };
+		3A823C831E46667200A620BA /* VowelCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VowelCount.h; sourceTree = "<group>"; };
+		3A823C841E46667200A620BA /* VowelCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VowelCount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				3A823C731E45143000A620BA /* LaunchScreen.storyboard */,
 				3A823C761E45143000A620BA /* Info.plist */,
 				3A823C651E45143000A620BA /* Supporting Files */,
+				3A823C7D1E46664500A620BA /* SentenceCount.h */,
+				3A823C7E1E46664500A620BA /* SentenceCount.m */,
+				3A823C831E46667200A620BA /* VowelCount.h */,
+				3A823C841E46667200A620BA /* VowelCount.m */,
+				3A823C801E46665A00A620BA /* CharacterCount.h */,
+				3A823C811E46665A00A620BA /* CharacterCount.m */,
 			);
 			path = "Word Processor";
 			sourceTree = "<group>";
@@ -151,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A823C7F1E46664500A620BA /* SentenceCount.m in Sources */,
+				3A823C821E46665A00A620BA /* CharacterCount.m in Sources */,
 				3A823C6D1E45143000A620BA /* ViewController.m in Sources */,
 				3A823C6A1E45143000A620BA /* AppDelegate.m in Sources */,
 				3A823C671E45143000A620BA /* main.m in Sources */,
+				3A823C851E46667200A620BA /* VowelCount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +330,7 @@
 				3A823C7B1E45143000A620BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

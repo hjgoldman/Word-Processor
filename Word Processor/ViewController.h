@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SentenceCount.h"
+#import "VowelCount.h"
+#import "CharacterCount.h"
 
 @interface ViewController : UIViewController
 
@@ -15,7 +18,6 @@
 @property (nonatomic,weak) IBOutlet UILabel *sentenceCountLabel;
 @property (nonatomic,weak) IBOutlet UILabel *vowelCountLabel;
 @property (nonatomic,weak) IBOutlet UILabel *characterCountLabel;
-
 
 
 @end

@@ -20,63 +20,36 @@
 }
 
 -(IBAction) statsButtonPressed{
-    NSString *inputText = self.inputTextField.text;
     
-    NSUInteger sentenceCount = [[inputText componentsSeparatedByString:@"."] count] - 1;
-    self.sentenceCountLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)sentenceCount];
-
-    NSString *characterCount = [NSString stringWithFormat:@"%lu",(unsigned long)inputText.length];
-    self.characterCountLabel.text = characterCount;
+    SentenceCount *sentenceCount = [[SentenceCount alloc]init];
     
-    int vowelCount = 0;
-    for (int i = 0; i < inputText.length; i++) {
-        char ch = [inputText characterAtIndex:i];
-        
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'){
-            
-            vowelCount++; }
-    }
+    int getSentenceCount =[sentenceCount getSentenceCount:self.inputTextField.text];
+    if (getSentenceCount == 1){
+        self.sentenceCountLabel.text = [NSString stringWithFormat:@"There is %d sentence",getSentenceCount];
+    } else {
+        self.sentenceCountLabel.text = [NSString stringWithFormat:@"There are %d sentences",getSentenceCount];
+    };
     
-    self.vowelCountLabel.text = [NSString stringWithFormat:@"%d",vowelCount];
+    VowelCount *vowelCount = [[VowelCount alloc]init];
     
+    int getVowelCount =[vowelCount getVowelCount:self.inputTextField.text];
+    if (getVowelCount == 1){
+        self.vowelCountLabel.text = [NSString stringWithFormat:@"There is %d vowel",getVowelCount];
+    } else {
+        self.vowelCountLabel.text = [NSString stringWithFormat:@"There are %d vowels",getVowelCount];
+    };
     
+    CharacterCount *characterCount = [[CharacterCount alloc]init];
     
-    
-}
-
--(void) characterCount {
-
-    NSString *inputText = self.inputTextField.text;
-    NSString *characterCount = [NSString stringWithFormat:@"%lu",(unsigned long)inputText.length];
-    self.characterCountLabel.text = characterCount;
+    int getCharacterCount = [characterCount getCharacterCount:self.inputTextField.text];
+    if (getCharacterCount == 1){
+        self.characterCountLabel.text = [NSString stringWithFormat:@"There is %d character",getCharacterCount];
+    } else {
+        self.characterCountLabel.text = [NSString stringWithFormat:@"There are %d characters",getCharacterCount];
+    };
 
 }
 
-- (void) sentenceCount
-{
-    NSString *inputText = self.inputTextField.text;
-    NSUInteger sentenceCount = [[inputText componentsSeparatedByString:@"."] count] - 1;
-    self.sentenceCountLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)sentenceCount];
-}
-
--(void) vowelCount{
-    
-    NSString *inputText = self.inputTextField.text;
-    
-    
-    for (int i = 0; i < inputText.length; i++) {
-        char ch = [inputText characterAtIndex:i];
-        
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ){
-            
-            ch++; }
-    }
-    
-    
-}
-    
-    
-    
 @end
     
 
